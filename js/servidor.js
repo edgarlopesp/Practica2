@@ -42,7 +42,7 @@ fs.readFile(filePath, function(error, content){
         }
     }else{
         reponse.writeHead(200,{'Content-Type': contentType});
-        response.end(content,'utf-8');
+        reponse.end(content,'utf-8');
     } 
 });
 }).listen(3000);
