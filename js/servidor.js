@@ -36,13 +36,14 @@ fs.readFile(filePath, function(error, content){
                 response.end(content,'utf-8');
             });
         }else{
-            reponse.writeHead(500);
-            reponse.end('Sorry, Chect with the site admin'+error.code+'..\n');
+            response.writeHead(500);
+            response.end('Sorry, Chect with the site admin'+error.code+'..\n');
             response.end();
         }
     }else{
-        reponse.writeHead(200,{'Content-Type': contentType});
-        reponse.end(content,'utf-8');
+        response.writeHead(200,{'Content-Type': contentType});
+        response.end(content,'utf-8');
+    
     } 
 });
 }).listen(3000);
