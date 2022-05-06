@@ -54,4 +54,4 @@ http.createServer(function (request, response) {
 }).listen(3000);
 
 
-console.log('Server running at http://192.168.1.152:3000/');
+console.log('Server running at http://192.168.50.40:3000/');
